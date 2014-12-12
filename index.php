@@ -89,14 +89,14 @@
 				destination:end,
 				travelMode:google.maps.TravelMode.WALKING,
 				};
-			alert("Se va a mostrar una ruta a pie.");
+			alert("Searching for a walking way.");
 		}else{
 			peticion = {
 				origin:start, 
 				destination:end,
 				travelMode:google.maps.TravelMode.DRIVING,
 				};
-			alert("Se va a mostrar una ruta en vehículo.");
+			alert("SErching for a driving way.");
 		}
 			
 			directionsService.route(peticion, function(response, status) {

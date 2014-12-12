@@ -194,10 +194,37 @@
 								}
 								$i++;
 							}
+							?>
+							
+						
+			
+		</select>
+		<!--##########################-->
+			<table cellpadding="0" cellspacing="0" border="0" class="display" id="verbos">
+				<thead>
+					<tr>
+						<th>direccion</th>
+						<th>nombre</th>
+					</tr>
+				</thead>
+				<tbody>
+				<?php
+							foreach ($rowarray as $row) {
+							print "<tr>";
+							$i=0;
+							foreach ($row as $col) {
+								if($i==1 || $i==2){
+									print '<td>'.$col.'</td>';
+								}
+								$i++;
+							}
+							print "</tr>";
+						}
 				}
 			?>
-		</select>
-
+			</tbody>
+			</table>
+<!--##########################-->
 		<br/>
 		<span class="label label-info">Max distance to go on foot: </span>
 		<input type="number" name="distanciaMax" style="padding: 0px; margin-top: 20px; height:30px;" value="1500" min="1" />

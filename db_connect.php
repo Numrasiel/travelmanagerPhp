@@ -1,10 +1,10 @@
 <?php
 class Connection {
 	public $db1 = array(
-		"host" => "$base_datos.address.public:$base_datos.port",
-		"user" => "$base_datos.DATABASE_USERNAME",
-		"pw" => "$base_datos.DATABASE_PASSWORD",
-		"db_name" => "$base_datos.DATABASE_NAME"
+		"host" => "$mysql_service.address.public:$mysql_service.port",
+		"user" => "$mysql_service.DATABASE_USERNAME",
+		"pw" => "$mysql_service.DATABASE_PASSWORD",
+		"db_name" => "$mysql_service.DATABASE_NAME"
 	);
 	
 	public function __construct($cdb){

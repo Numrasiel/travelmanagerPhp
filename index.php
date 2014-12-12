@@ -183,7 +183,17 @@
 				$query = $get->query("SELECT * FROM travelmanager.end_point");
 				$rowarray = $get->fetch($query);
 				foreach ($rowarray as $row) {
-					print '<option value="'.$row[1].'">'.$row[2].'</option>';//<option value="Campo de San Francisco">Campo de San Francisco</option>	
+					//print '<option value="'.$row[1].'">'.$row[2].'</option>';//<option value="Campo de San Francisco">Campo de San Francisco</option>	
+							$i=0;
+							foreach ($row as $col) {
+								if($i==1){
+									print '<option value="'.$col[1].'">';
+								}
+								if($i==2){
+									print $col[2].'</option>';
+								}
+								$i++;
+							}
 				}
 			?>
 		</select>

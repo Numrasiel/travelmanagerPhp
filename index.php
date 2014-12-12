@@ -169,7 +169,7 @@
 		<select id="start" style="margin-top: 20px;">
 			<?php		
 				$get = new Connection("db1");
-				$query = $get->query("SELECT * travelmanager.start_point");
+				$query = $get->query("SELECT * FROM travelmanager.start_point");
 				$rowarray = $get->fetch($query);
 				foreach ($rowarray as $row) {
 					print '<option value="'.$row[1].'">'.$row[2].'</option>';//<option value="Colegio Público Gesta I">Colegio Público Gesta I</option>
@@ -180,7 +180,7 @@
 		<select id="end" style="margin-top: 20px;">
 			<?php		
 				$get = new Connection("db1");
-				$query = $get->query("SELECT * travelmanager.end_point");
+				$query = $get->query("SELECT * FROM travelmanager.end_point");
 				$rowarray = $get->fetch($query);
 				foreach ($rowarray as $row) {
 					print '<option value="'.$row[1].'">'.$row[2].'</option>';//<option value="Campo de San Francisco">Campo de San Francisco</option>	

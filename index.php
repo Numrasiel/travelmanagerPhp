@@ -184,46 +184,24 @@
 				$rowarray = $get->fetch($query);
 				foreach ($rowarray as $row) {
 					//print '<option value="'.$row[1].'">'.$row[2].'</option>';//<option value="Campo de San Francisco">Campo de San Francisco</option>	
-							$i=0;
-							foreach ($row as $col) {
-								if($i==1){
-									print '<option value="'.$col[1].'">';
-								}
-								if($i==2){
-									print $col[2].'</option>';
-								}
-								$i++;
-							}
-							?>
+					$i=0;
+					foreach ($row as $col) {
+						if($i==1){
+							print '<option value="'.$col.'">';
+						}
+						if($i==2){
+							print $col.'</option>';
+						}
+						$i++;
+					}
+				}
+			?>
 							
 						
 			
 		</select>
 		<!--##########################-->
-			<table cellpadding="0" cellspacing="0" border="0" class="display" id="verbos">
-				<thead>
-					<tr>
-						<th>direccion</th>
-						<th>nombre</th>
-					</tr>
-				</thead>
-				<tbody>
-				<?php
-							foreach ($rowarray as $row) {
-							print "<tr>";
-							$i=0;
-							foreach ($row as $col) {
-								if($i==1 || $i==2){
-									print '<td>'.$col.'</td>';
-								}
-								$i++;
-							}
-							print "</tr>";
-						}
-				}
-			?>
-			</tbody>
-			</table>
+
 <!--##########################-->
 		<br/>
 		<span class="label label-info">Max distance to go on foot: </span>

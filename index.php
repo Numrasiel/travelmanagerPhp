@@ -2,11 +2,157 @@
 <head>
 <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
 <title>Travel Manager</title>
-<link href="bootstrap.css" type="text/css" rel="stylesheet"/>
-<style>
+<!--link href="bootstrap.css" type="text/css" rel="stylesheet"/-->
+<style type="text/css">
 	img {
   		max-width: none;
-	}</style>
+	}
+	body { 
+	color: #333333;
+	font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+	font-size: 14px;
+	line-height: 20px;
+	}
+	.label { 
+	border-radius: 3px;
+}
+.label, .badge { 
+	background-color: #999999;
+	color: #FFFFFF;
+	display: inline-block;
+	font-size: 11.84px;
+	font-weight: 700;
+	line-height: 14px;
+	padding: 2px 4px;
+	text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.251);
+	vertical-align: baseline;
+	white-space: nowrap;
+}
+.label-info, .badge-info { 
+	background-color: #3A87AD;
+}
+element.style { 
+margin-top: 20px;
+}
+
+select:focus, input[type="file"]:focus, input[type="radio"]:focus, input[type="checkbox"]:focus { 
+outline: thin dotted #333333;
+outline-offset: -2px;
+}
+
+select { 
+background-color: #FFFFFF;
+border: 1px solid #CCCCCC;
+width: 220px;
+}
+
+select, input[type="file"] { 
+height: 30px;
+line-height: 30px;
+}
+
+select, textarea, input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"], .uneditable-input { 
+border-radius: 4px;
+color: #555555;
+display: inline-block;
+font-size: 14px;
+height: 20px;
+line-height: 20px;
+margin-bottom: 10px;
+padding: 4px 6px;
+vertical-align: middle;
+}
+
+input, button, select, textarea { 
+font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+
+.btn:focus { 
+outline: thin dotted #333333;
+outline-offset: -2px;
+}
+
+.btn:hover, .btn:focus { 
+background-position: 0px -15px;
+color: #333333;
+text-decoration: none;
+transition: background-position 0.1s cubic-bezier(0, 0, 1, 1) 0;
+}
+
+.btn:hover, .btn:focus { 
+background-position: 0px -15px;
+color: #333333;
+text-decoration: none;
+transition: background-position 0.1s cubic-bezier(0, 0, 1, 1) 0;
+}
+
+.btn:hover, .btn:focus, .btn:active, .btn.active, .btn.disabled, .btn[disabled] { 
+background-color: #E6E6E6;
+color: #333333;
+}
+
+.btn:hover, .btn:focus, .btn:active, .btn.active, .btn.disabled, .btn[disabled] { 
+background-color: #E6E6E6;
+color: #333333;
+}
+
+.btn-success:hover, .btn-success:focus, .btn-success:active, .btn-success.active, .btn-success.disabled, .btn-success[disabled] { 
+background-color: #51A351;
+color: #FFFFFF;
+}
+
+.btn-success:hover, .btn-success:focus, .btn-success:active, .btn-success.active, .btn-success.disabled, .btn-success[disabled] { 
+background-color: #51A351;
+color: #FFFFFF;
+}
+
+input[type="file"], input[type="image"], input[type="submit"], input[type="reset"], input[type="button"], input[type="radio"], input[type="checkbox"] { 
+width: auto;
+}
+
+label, select, button, input[type="button"], input[type="reset"], input[type="submit"], input[type="radio"], input[type="checkbox"] { 
+cursor: pointer;
+}
+
+button, html input[type="button"], input[type="reset"], input[type="submit"] { 
+cursor: pointer;
+}
+
+.btn { 
+background-color: #F5F5F5;
+background-image: linear-gradient(to bottom, #FFFFFF, #E6E6E6);
+background-repeat: repeat-x;
+border-bottom: 1px solid #B3B3B3;
+border-left: 1px solid rgba(0, 0, 0, 0.102);
+border-radius: 4px;
+border-right: 1px solid rgba(0, 0, 0, 0.102);
+border-top: 1px solid rgba(0, 0, 0, 0.102);
+box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.196), 0px 1px 2px rgba(0, 0, 0, 0.047);
+color: #333333;
+cursor: pointer;
+display: inline-block;
+font-size: 14px;
+line-height: 20px;
+margin-bottom: 0px;
+padding: 4px 12px;
+text-align: center;
+text-shadow: 0px 1px 1px rgba(255, 255, 255, 0.749);
+vertical-align: middle;
+}
+
+.btn-success { 
+background-color: #5BB75B;
+background-image: linear-gradient(to bottom, #62C462, #51A351);
+background-repeat: repeat-x;
+border-bottom-color: rgba(0, 0, 0, 0.251);
+border-left-color: rgba(0, 0, 0, 0.102);
+border-right-color: rgba(0, 0, 0, 0.102);
+border-top-color: rgba(0, 0, 0, 0.102);
+color: #FFFFFF;
+text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.251);
+}
+
+</style>
 <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
 <script type="text/javascript">
